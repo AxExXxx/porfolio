@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Portafolio de Valentín Vázquez</title>
+</head>
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Portafolio de Valentín Vázquez</h1>
+                    <nav id="nav">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">MENU</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">Sobre mí</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">Servicios</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">Proyectos</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">Contacto</a></li>
+                        </ul>
+                    </nav>
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2><span></span> Vazquez Valentin Programador de Ciberseguridad</h2>
+                <p class="descripcion">Con experiencia en ciberseguridad y manejo de herramientas como Wireshark, Metasploit y Nmap, además de programación en Python.</p>
+                <a href="#portfolio">Ir</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <!-- Imagen de Valentín Vázquez -->
+            <img src="img/IMG-20201030-WA0046.jpg" alt="Foto de Valentín Vázquez" style="width: 100%; height: auto;">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre mí</p>
+            <h2>Hola, soy <span>Valentín Vázquez</span></h2>
+            <h3>Especialista en Ciberseguridad</h3>
+            <p>Mi pasión por la tecnología y la seguridad me ha llevado a especializarme en ciberseguridad, donde manejo diversas herramientas y lenguajes de programación para asegurar entornos digitales.</p>
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">Mis Servicios</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-lock"></i></span>
+                <h4>Consultoría en Ciberseguridad</h4>
+                <hr>
+                <p>Asesoramiento sobre mejores prácticas de seguridad y auditorías de sistemas.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <h4>Desarrollo de Scripts en Python</h4>
+                <hr>
+                <p>Automatización de tareas y análisis de datos para mejorar la eficiencia en procesos de seguridad.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Gestión de Bases de Datos</h4>
+                <hr>
+                <p>Implementación de bases de datos seguras y optimizadas para el almacenamiento de información.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Proyectos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/seguridad en redes.jpeg" alt="Proyecto 1">
+                <div class="info">
+                    <h4>Proyecto de Seguridad en Redes</h4>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/sistemas.jpeg" alt="Proyecto 2">
+                <div class="info">
+                    <h4>Auditoría de Sistema</h4>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/pentesting.jpeg" alt="Proyecto 3">
+                <div class="info">
+                    <h4>Desarrollo de Herramienta de PenTesting</h4>
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/script.jpeg" alt="Proyecto 4">
+                <div class="info">
+                    <h4>Script de Automatización</h4>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/ataques ciberneticos.jpeg" alt="Proyecto 5">
+                <div class="info">
+                    <h4>Simulación de Ataques Cibernéticos</h4>
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/firewall.jpeg" alt="Proyecto 6">
+                <div class="info">
+                    <h4>Configuración de Firewall</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contacto</h3>
+        <p>Puedes encontrarme en mis redes sociales:</p>
+        <div class="redes-sociales">
+            <a href="https://www.instagram.com/valen_tin_000/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://github.com/AxExXxx/valentin" target="_blank"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Portafolio de Valentín Vázquez - Ciberseguridad</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
